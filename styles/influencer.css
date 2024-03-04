@@ -112,6 +112,7 @@ main{
     gap: 30px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
     
 }
 
@@ -162,4 +163,34 @@ main{
     position: relative;
     left: 955px;
 
+}
+
+/* sectionC styles */
+
+.section-columns{
+    display: flex;
+    gap: 96px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.column-title{
+    color: rgb(10, 8, 38);
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 16px;
+   
+}
+
+.column-description{
+    color: rgb(108, 108, 108);
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+.btn{
+    font-weight: 700;
+    background-color:rgb(224, 44, 109);
+    color: white;
+    padding: 10px 24px;
+    border: 0;
 }
