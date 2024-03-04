@@ -1,10 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Merriweather:wght@400;700;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* common shared styles */
 body{
     font-family : "Poppins", sans-serif;
 }
 
-.header-primary-color{
+.primary-color{
     color: rgb(58, 58, 58);
 
 }
@@ -12,7 +15,7 @@ body{
 /* header styles */
 
 .header{
-    margin: 60px 100px;
+    margin: 40px 100px 50px;
     background-image: url("../images/Circle design.svg");
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -81,14 +84,82 @@ li a{
 }
 /* main styles */
 main{
-    margin: 30px 180px;
+    max-width: 1100px;
+    margin: 30px auto;
 }
-/* sectionA started */
+/* sectionA styles */
 .sectionA{
     display: flex;
     justify-content: space-around;
     padding: 40px;
     background: linear-gradient(135.00deg, rgba(192, 204, 218, 0.1) 0%,rgba(192, 204, 218, 0.6) 50.378%,rgba(192, 204, 218, 0.1) 100%);
     margin-bottom: 0px;
+
+}
+
+/* sectionB styles */
+
+.title{
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.product{
+    padding: 15px;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+
+.product-title{
+    color: rgb(24, 25, 31);
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+
+.product-price, .product-ratings, .product-description{
+    font-family: "Inter", sans-serif;
+
+}
+
+.product-price{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.product-ratings{
+    color: rgb(94, 99, 102);
+    font-weight: 700;
+    font-size: 0.87rem;
+}
+
+.fa-star, .fa-star-half-stroke{
+    color: rgb(251, 130, 0);
+}
+
+.product-description{
+    color: rgb(120, 120, 133);
+    font-weight: 700;
+    font-size: 0.87rem;
+    line-height: 1.25rem;
+}
+
+.see-more{
+    color: rgba(224, 44, 109, 0.87);
+    font-weight: 700;
+    position: relative;
+    left: 955px;
 
 }
