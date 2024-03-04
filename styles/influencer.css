@@ -194,3 +194,28 @@ main{
     padding: 10px 24px;
     border: 0;
 }
+
+/* footer styles */
+.footer{
+    background-color: #0A0826;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    line-height: 15px;
+}
+
+.footer-content{
+    margin-bottom: 25px;
+}
+.social-icons{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.social-icons i{
+    background-color: rgb(66, 64, 64);
+    padding: 10px;
+    border-radius: 50%;
+
+}
