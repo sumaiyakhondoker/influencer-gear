@@ -16,13 +16,19 @@ body{
 
 .header{
     margin: 40px 100px 50px;
-    background-image: url("../images/Circle design.svg");
+    /* background-image: url("../images/Circle design.svg");
     background-repeat: no-repeat;
-    background-position: bottom right;
+    background-position: bottom right; */
  
 
 }
 
+.header img{
+    background-image: url("../images/Circle design.svg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    padding: 40px;
+}
 .nav{
     display: flex;
     justify-content: space-between;
@@ -217,5 +223,144 @@ main{
     background-color: rgb(66, 64, 64);
     padding: 10px;
     border-radius: 50%;
+
+}
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+/* header */
+    .header{
+        overflow: hidden;
+        margin: auto;
+        padding: 0px;
+    
+    }
+    .nav{
+        flex-direction: column;
+        /* align-items: flex-start; */
+
+        
+    }
+    .nav-title{
+        /* text-align: center; */
+        margin: 25px auto;
+
+    }
+/* 
+    .nav > ul{y
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; 
+        margin: auto;
+    } */
+
+    .nav > ul{
+        margin: auto;
+        /* text-align: center; */
+        margin-bottom: 0px;
+        padding: 0px;
+    }
+    .header-container{
+        margin-top: 0px;
+        flex-direction: column-reverse;
+    }
+    
+    .header img{
+        /* background-image: none; */
+        width: 100%;
+        /* margin-top: 0px; */
+        margin: auto;
+        padding: 50px 0px;
+
+        /* padding:50px 5px; */
+    }
+
+    .content{
+        text-align: center;
+        font-size: 1.25rem;
+    }
+    .content h1{
+        font-size: 2rem;
+    }
+main{
+    overflow: hidden;
+}
+    /* sectionA */
+    .sectionA{
+        margin: 0px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap:30px;
+        column-gap: 40px;
+        align-items: center;
+
+    }
+
+    .sectionA img{
+        width: 100%;
+
+    }
+
+    /* sectionB */
+
+    .sectionB{
+        overflow: hidden;
+
+    }
+    .product-container{
+        grid-template-columns: 1fr;
+        margin:auto;
+        /* max-width: calc(100% - 10px - 5px); */
+    }
+
+    .product{
+        margin: 0px;
+        padding: 5px;
+
+    }
+
+    .product img{
+        width: 100%;
+    }
+
+    /* sectionC */
+    .section-columns{
+        margin-top: 0px;
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 5px;
+    }
+    
+    .column img{
+        width: 80%;
+        margin: auto;
+        margin-top: 0px;
+    }
+    .btn{
+        margin-bottom: 0px;
+    }
+
+
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    /* header */
+    .header{
+        margin: auto;
+        padding: 50px;
+    }
+
+    /* sectionB */
+    .product-container{
+        padding: 50px;
+        grid-template-columns:repeat(2, 1fr);
+        margin: auto;}
+/* sectionC */
+.sectionC{
+    padding: 30px;
+}
 
 }
